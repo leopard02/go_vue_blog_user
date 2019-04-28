@@ -6,7 +6,6 @@ import (
 	"testing"
 	"runtime"
 	"path/filepath"
-	_ "go_vue_blog_admin/routers"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"

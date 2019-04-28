@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"go_vue_blog/blog_user/controllers"
+	"go_vue_blog_user/controllers"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/plugins/cors"
 )
@@ -15,9 +15,9 @@ func init() {
         ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
         AllowCredentials: true,
 	}))
-	
+
 	beego.Router("/articleDetail",&controllers.ArticleDetailController{})
 	beego.Router("/articleList",&controllers.ArticleListController{})
-	
-	
+
+
 }
